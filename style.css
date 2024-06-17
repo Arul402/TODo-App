@@ -1,0 +1,112 @@
+body{
+    background-color:darkgrey;
+    font-family: cursive;
+}
+.head{
+    background-color: blueviolet;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    text-align: center;
+}
+.disptask{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    
+}
+.disptask1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.disptaskinner{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.addtask{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+    
+}
+.base{
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+}
+.baseevent{
+    background-color: blueviolet;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: black;
+    /* display: block; */
+    /* align-items: center; */
+    width: 50%;
+    height: 30%;
+    border-radius: 10px;
+    z-index: 2;
+    display: none;
+}
+.baseevent div{
+    /* display: block; */
+    /* width: 100%; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* position: absolute; */
+    padding: 10px;
+    color: white;
+    margin: 30px;
+    /* right:  22.5%; */
+}
+.baseevent div input{
+    outline: none;
+    padding: 10px;
+    width: 80%;
+    font-size: large;
+    border-radius: 30px;
+    margin: 20px;
+    /* margin-left: 50px; */
+}
+.baseevent div input::placeholder{
+    color: black;
+    font-size: large;
+}
+.baseevent div button{
+    padding: 10px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+}
+#task1{
+    background-color: red;
+    color: white;
+}
+.selected{
+    background-color: red;
+    text-decoration: line-through;
+}
+.notselected{
+    background-color: white;
+    text-decoration: none;
+}
